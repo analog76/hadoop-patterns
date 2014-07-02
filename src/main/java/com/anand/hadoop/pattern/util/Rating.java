@@ -31,6 +31,9 @@ public class Rating {
     public void parse(String line){
      //   943	595	2	875502597
 
+        this.userId=0;
+        this.movieId= 0;
+        this.rating=0;
            String[] str=line.split("\t");
            this.userId=Integer.parseInt(str[0]);
            this.movieId=Integer.parseInt(str[1]);

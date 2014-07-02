@@ -1,5 +1,7 @@
-package com.anand.hadoop.pattern.join.Simple;
+package com.anand.hadoop.pattern.join.innerouter;
 
+import com.anand.hadoop.pattern.join.Simple.SimpleJoinItem;
+import com.anand.hadoop.pattern.join.Simple.SimpleJoinRating;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -14,7 +16,7 @@ import java.io.IOException;
 /**
  * Created by analog76 on 6/28/14.
  */
-public class SimpleJoinDriver {
+public class InnerOuterJoinDriver {
 
 
 
@@ -25,7 +27,7 @@ public class SimpleJoinDriver {
         String strItem  = "/home/analog76/Downloads/ml-100k/u.item";
         String strRating  = "/home/analog76/Downloads/ml-100k/*.base";
 
-        String strOutput="/home/analog76/Downloads/MapReduceOutput/simpleJoin/";
+        String strOutput="/home/analog76/Downloads/MapReduceOutput/InnerOuterJoin/";
 
         Path outputPath = new Path(strOutput);
 
@@ -56,7 +58,7 @@ public class SimpleJoinDriver {
         job.setMapOutputValueClass(Text.class);
 
 
-        job.setReducerClass(SimpleJoinReducer.class);
+        job.setReducerClass(InnserOuterJoinReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
