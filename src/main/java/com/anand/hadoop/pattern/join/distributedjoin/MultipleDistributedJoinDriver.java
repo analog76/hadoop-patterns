@@ -21,12 +21,12 @@ public class MultipleDistributedJoinDriver {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
-        String strUser  = "/home/analog76/Downloads/ml-100k/u.user";
-        String strItem  = "/home/analog76/Downloads/ml-100k/u.item";
+        String strUser  = "/Users/anand.ranganathan/github/ml-100k/u.user";
+        String strItem  = "/Users/anand.ranganathan/github/ml-100k/u.item";
         String strItemLocal  = "/tmp/ml-100k/u.item";
 
-        String strRating  = "/home/analog76/Downloads/ml-100k/*.base";
-        String strOutput="/home/analog76/Downloads/MapReduceOutput/multipledistributedjoin/";
+        String strRating  = "/Users/anand.ranganathan/github/ml-100k/*.base";
+        String strOutput="/Users/anand.ranganathan/github/MapReduceOutput/multipledistributedjoin/";
 
 
         Path outputPath= new Path(strOutput);

@@ -23,10 +23,10 @@ public class BinningDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
 
-        String strInput="/home/analog76/Downloads/infochimps_dataset_4777_download_16185/NASDAQ/NASDAQ_daily*B.csv";
+        String strInput="/Users/anand.ranganathan/github/nasdaq-outliers/data/NASDAQ/NASDAQ_daily*B.csv";
         //    strInput="/home/analog76/Documents/stackexchange";
 
-        String strOutput="/home/analog76/Downloads/MapReduceOutput/binning/";
+        String strOutput="/Users/anand.ranganathan/github/MapReduceOutput/binning/";
         Configuration conf = new Configuration();
         Job job = new Job(conf);
 

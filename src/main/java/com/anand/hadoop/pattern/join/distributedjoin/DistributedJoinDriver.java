@@ -22,13 +22,13 @@ import java.io.IOException;
 public class DistributedJoinDriver {
 
     public  static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-        String strUser  = "/home/analog76/Downloads/ml-100k/u.user";
-        String strItem  = "/home/analog76/Downloads/ml-100k/u.item";
+        String strUser  = "/Users/anand.ranganathan/github/ml-100k/u.user";
+        String strItem  = "/Users/anand.ranganathan/github/ml-100k/u.item";
         String strItemLocal  = "/tmp/ml-100k/u.item";
 
-        String strRating  = "/home/analog76/Downloads/ml-100k/*.base";
+        String strRating  = "/Users/anand.ranganathan/github/ml-100k/*.base";
 
-        String strOutput="/home/analog76/Downloads/MapReduceOutput/distributedjoin/";
+        String strOutput="/Users/anand.ranganathan/github/MapReduceOutput/distributedjoin/";
 
         Path outputPath = new Path(strOutput);
 
